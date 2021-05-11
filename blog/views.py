@@ -79,7 +79,6 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 
-
 def add_comment_to_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
